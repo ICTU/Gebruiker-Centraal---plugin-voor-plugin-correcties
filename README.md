@@ -13,3 +13,4 @@ Correcties op Event Manager's functionaliteit; verwijderen van de BBPress login 
 
 ## Version history
 * 1.2 - Correcties op Event Manager's functionaliteit; verwijderen van de BBPress login widget.
+ 
