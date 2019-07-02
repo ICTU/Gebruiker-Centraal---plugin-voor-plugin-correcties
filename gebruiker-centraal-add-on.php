@@ -18,10 +18,14 @@ add_action( 'widgets_init', 'GC_WBVB_remove_plugin_widgets', 10 );
 //========================================================================================================
 
 function GC_WBVB_remove_plugin_widgets() {
+  
+  // bbpres login widget	
+  unregister_widget('BBP_Login_Widget');
 
-    // bbpres login widget	
-    unregister_widget('BBP_Login_Widget');
+  unregister_widget('widget_meta');
 
+
+  
 }
 
 

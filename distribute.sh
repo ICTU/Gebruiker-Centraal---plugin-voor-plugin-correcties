@@ -21,23 +21,26 @@ rm '/shared-paul-files/Webs/temp/README.html'
 cd '/shared-paul-files/Webs/temp/'
 find . -name ‘*.DS_Store’ -type f -delete
 
-/shared-paul-files/Webs/ICTU/Gebruiker Centraal/sentia/accept/www/wp-content/plugins/gebruiker-centraal-add-on/
+cp '/shared-paul-files/Webs/temp/gebruiker-centraal-add-on.php' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/mu-plugins/gebruiker-centraal-add-on.php';
 
+
+##===============================================================================================================
+##===============================================================================================================
 
 # copy from temp dir to dev-env
-rsync -r -a --delete '/shared-paul-files/Webs/temp/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' 
+# rsync -r -a --delete '/shared-paul-files/Webs/temp/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' 
 
 # remove temp dir
-rm -rf '/shared-paul-files/Webs/temp/'
-
-
+# rm -rf '/shared-paul-files/Webs/temp/'
 
 # Naar Eriks server
-rsync -r -a  --delete '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/live-dutchlogic/wp-content/plugins/gebruiker-centraal-add-on/'
+# rsync -r -a  --delete '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/live-dutchlogic/wp-content/plugins/gebruiker-centraal-add-on/'
 
 # en een kopietje naar Sentia accept
-rsync -r -a --delete '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/sentia/accept/www/wp-content/plugins/gebruiker-centraal-add-on/'
+# rsync -r -a --delete '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/sentia/accept/www/wp-content/plugins/gebruiker-centraal-add-on/'
 
 # en een kopietje naar Sentia live
-rsync -r -a --delete '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/sentia/live/www/wp-content/plugins/gebruiker-centraal-add-on/'
+# rsync -r -a --delete '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/development/wp-content/plugins/gebruiker-centraal-add-on/' '/shared-paul-files/Webs/ICTU/Gebruiker Centraal/sentia/live/www/wp-content/plugins/gebruiker-centraal-add-on/'
 
+##===============================================================================================================
+##===============================================================================================================
